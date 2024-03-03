@@ -30,7 +30,14 @@
         homerow: homerow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp SPACE>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_press>,
+                <&kp SPACE>;
+
             label = "HOMEROW";
         };
     };
