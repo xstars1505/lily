@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
@@ -59,7 +59,7 @@
 &kp TAB     &kp Q   &kp W   &kp E   &kp R         &kp T                                    &kp Y     &kp U   &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
 &kp LSHIFT  &kp A   &kp S   &kp D   &kp F         &kp G                                    &kp H     &kp J   &kp K      &kp L    &kp SEMI  &kp BACKSPACE
 &kp LCTRL   &kp Z   &kp X   &kp C   &kp V         &kp B             &mo 1        &kp RBKT  &kp N     &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                            &tool   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &mo 2     &homerow  &mo 1   &trans
+                            &kp F7  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &mo 2     &homerow  &mo 1   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
